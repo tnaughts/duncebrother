@@ -36,7 +36,7 @@
 </head>
 
 <body id="page-top" class="index">
-<div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
+<div id="skipnav"><a href="/#maincontent">Skip to main content</a></div>
 
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
@@ -44,7 +44,7 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    <span class="sr-only">Toggle navigation</span>Dunce <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="#page-top">The Dunce Brother</a>
             </div>
@@ -56,13 +56,14 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">History</a>
+                        <a href="/#portfolio">History</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">About</a>
+                        <a href="/#about">About</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact">V (availability form)</a>
+                        <a href="/#contact">V
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -71,100 +72,11 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <!-- Header -->
-    <header>
-        <div class="container" id="maincontent" tabindex="-1">
-            <div class="row">
-                <div class="col-lg-12">
 
-                    <img class="img-responsive" src="http://i64.tinypic.com/34j3epy.png" alt="">
-                    <div class="intro-text">
-                        <h1 class="name">Dunce Brother PRO AM Invite</h1>
-                        <hr class="star-light">
-                        <span class="skills">"Stay True"
-                          <p>-Tiny Tony</p>
-                         </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+
 
     <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>History</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="col-lg-4 col-lg-offset-2">
-                <p>The Dunce Brother has had a long and distinguished history. Set up in memoriam of our dear friend Tiny Tony. Eager challengers vie for a chance to sip out of the "Tiny Tony Memorial Cup".</p>
-            </div>
-            <div class="col-lg-4">
-                <p>
-                  Traveling has just begun with the Dunce Brother, with Dunce Brother IV taking place across state lines in Wisconsin. Due mainly out of necessity, the Dunce Brother will continuously rotate courses.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>The Dunce Brother Pro AM Invite is played in a 2 man scramble format. Champion is calculated based off a Peoria HCP system. </p>
-                </div>
-                <div class="col-lg-4">
-                    <p>
-                      Money prizes for both Low Gross and Low Net champions. However; all glory goes the the Low Net winners. Award for gruesome twosome has been discontinued.
-                    </p>
-                </div>
-                <!-- <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
-                    </a>
-                </div> -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Dunce Brother V: A Spiritual Journey</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <div class="col-lg-4 col-lg-offset-2">
-                        <p>The 5th anniversary of the Dunce Brother will focus heavily on spiritual awakening and a deeper understanding of the self. This will require getting into a boat and voyaging the heavy seas of Lake Michigan with JB at the helm.</p>
-                    </div>
-                    <div class="col-lg-4">
-                        <p>
-                          Water, earth, wind, and fire will play a prominent role in Dunce Brother V. The voyage will transcend the game of golf and it is our aim that each participant will be a more grounded human post Dunce.
-                        </p>
-                    </div>
-                    <div>
-                      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeisGtRc8DRUnmAm65GP54BS38CTr6SjKtHeBcweluPMHoZ4w/viewform?embedded=true" width="360" height="250" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <%= yield %>
 
     <!-- Footer -->
     <footer class="text-center">
@@ -175,6 +87,7 @@
                         <h3>Location</h3>
                         <p>JB's Backseat
                             <br>Hammond, IN</p>
+                        <p>tinytony@duncebrother.com</p>
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>Around the Web</h3>
