@@ -19,6 +19,9 @@ config/initializers/secret_token.rb
 # dotenv
 # TODO Comment out this rule if environment variables can be committed
 .env
+db/seeds.rb
+seeds.rb
+
 
 ## Environment normalization:
 /.bundle

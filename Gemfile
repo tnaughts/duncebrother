@@ -30,6 +30,10 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'listen', '~> 3.0.5'
 gem 'twilio-ruby'
+
+group :development, :test do
+  gem 'dotenv-rails'
+end
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
