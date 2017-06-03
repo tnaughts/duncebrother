@@ -7,7 +7,7 @@ module Services
       def initialize(payload = {}, phone)
         @payload = payload
         @phone = phone
-        @twilio_client = Twilio::REST::Client.new "AC341b60ced7397fa99d3786c3b3c8e033", "fb737ee0fd817e98b1b5ad83d28dfb53"
+        @twilio_client = Twilio::REST::Client.new ENV['TWILIO_ACCOUNT_SID'], ENV["TWILIO_ACCOUNT_TOKEN"]
       end
 
       def send_message

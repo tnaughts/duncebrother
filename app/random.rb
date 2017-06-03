@@ -18,7 +18,9 @@ emails = [["tnaughts@gmail.com", "Tim", "+18159314369"],
 ["niemiec005@gmail.com", "Nick", "+16303012319"],
 ["bee25141@gmail.com", "Tony", "+18156004269"],
 ["grant@email", "Grant", "+16307401150"],
-["email", "Ron", "+18155450760"]]
+["email", "Ron", "+18155450760"],
+["email", "Mozack", "+12242178182"],
+["email", "Brian", "+18153511114"]]
 emails.each do |person|
 
   Services::Notifications::Sms.new({body: "Dunce Brother Automated Messaging: '#{person[1]}', The date has been set for Dunce V. July 7-9th, Michigan City. Check duncebrother.com/v for other updates and email tinytony@duncebrother.com if plan to not attend"}, person[2]).send_message
