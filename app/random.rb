@@ -23,5 +23,5 @@ emails = [["tnaughts@gmail.com", "Tim", "+18159314369"],
 ["email", "Brian", "+18153511114"]]
 emails.each do |person|
 
-  Services::Notifications::Sms.new({body: "Dunce Brother Automated Messaging: '#{person[1]}', The date has been set for Dunce V. July 7-9th, Michigan City. Check duncebrother.com/v for other updates and email tinytony@duncebrother.com if plan to not attend"}, person[2]).send_message
+  Services::Notifications::Sms.new({body: "Dunce Brother Alert: #{person[1]}, The date has been changed for Dunce V. July 14th-16th. Check duncebrother.com/v for other updates and email tinytony@duncebrother.com if you plan to not attend"}, person[2]).send_message
 end
