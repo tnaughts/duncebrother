@@ -20,8 +20,12 @@ emails = [["tnaughts@gmail.com", "Tim", "+18159314369"],
 ["grant@email", "Grant", "+16307401150"],
 ["email", "Ron", "+18155450760"],
 ["email", "Mozack", "+12242178182"],
-["email", "Brian", "+18153511114"]]
+["email", "Brian", "+18153511114"],
+["email", "Steve", "+18152589393"]]
 emails.each do |person|
 
-  Services::Notifications::Sms.new({body: "Dunce Brother Alert: #{person[1]}, The date has been changed for Dunce V. July 14th-16th. Check duncebrother.com/v for other updates and email tinytony@duncebrother.com if you plan to not attend"}, person[2]).send_message
+  Services::Notifications::Sms.new({body: "Dunce Brother Alert: #{person[1]}, Due to scheduling conflicts with Pierre Dunce, we will be forced to reschedule to september. Please go to https://goo.gl/forms/lcWdiAt4zNdqRwNo2 and check which dates you can attend. Most votes wins. Check duncebrother.com/v for more info  Sent with Love, Tiny Tony"}, person[2]).send_message
 end
+
+
+  Services::Notifications::Sms.new({body: "Dunce Brother Alert: test, The date has been changed for Dunce V. July 14th-16th. Check duncebrother.com/v for other updates and email tinytony@duncebrother.com if you plan to not attend"}, "+18159314369").send_message
