@@ -21,11 +21,47 @@ emails = [["tnaughts@gmail.com", "Tim", "+18159314369"],
 ["email", "Ron", "+18155450760"],
 ["email", "Mozack", "+12242178182"],
 ["email", "Brian", "+18153511114"],
-["email", "Steve", "+18152589393"]]
-emails.each do |person|
+["email", "Steve", "+18152589393"],
+["email", "Steve", "+17735477227"],
+["email", "Joe", "+16308855734"],
+["email", "Jacob", "+18476566947"],
+["email", "Pat", "+16302097607"],
+["email", "Jasso", "+16305429096"],
+["email", "Kris", "+16308628129"]]
 
-  Services::Notifications::Sms.new({body: "Dunce Brother Alert: #{person[1]}, Due to scheduling conflicts with Pierre Dunce, we will be forced to reschedule to september. Please go to https://goo.gl/forms/lcWdiAt4zNdqRwNo2 and check which dates you can attend. Most votes wins. Check duncebrother.com/v for more info  Sent with Love, Tiny Tony"}, person[2]).send_message
+emails.each do |person|
+  Services::Notifications::Sms.new({body: "Dunce Brother Special Notice: #{person[1]}, The V will be September 8th-10th and JB will get pink eye and a divorce. Housing has been confirmed and a schoolbus is rented for transport at the tournament. Email tinytony@duncebrother.com if you wish to cancel. Further details will be made available by July 5th at www.duncebrother.com - Stay True, Pierre Le'Dunce"}, person[2]).send_message
+end
+
+emails3.each do |person|
+  Services::Notifications::Sms.new({body: "Dunce Brother Alert: #{person[1]}, The Dunce Brother Pro-Am V will be either September 9th or 16th. Please go to https://goo.gl/forms/0g9dXzLQosscUQFU2 and check which dates you can attend. Most votes wins, Tiny Tony says no more fucking around. Check duncebrother.com for info. Sent with Love, Tiny Tony"}, person[2]).send_message
+end
+
+emails4 = [["tnaughts@gmail.com", "Tim", "+18159314369"],
+["anthony.m.lotesto@gmail.com", "Anthony", "+18159222518"],
+["jjnagle@gmail.com", "John", "+16189678309"],
+["rhaaksma15@gmail.com", "Shmo", "+18152121858"],
+["dllibert1822@gmail.com", "Dave", "+16302179143"],
+["eric.mclean82@gmail.com", "Eric", "+18152603729"],
+["bee25141@gmail.com", "Tony", "+18156004269"],
+["grant@email", "Grant", "+16307401150"],
+["email", "Ron", "+18155450760"],
+["email", "Mozack", "+12242178182"],
+["email", "Brian", "+18153511114"],
+["email", "Joe", "+16308855734"],
+["email", "Jacob", "+18476566947"],
+["email", "Steve", "+17735477227"],
+["email", "Kris", "+16308628129"]
+]
+
+emails4.each do |person|
+  Services::Notifications::Sms.new({body: "Dunce Brother Alert: #{person[1]}, It looks like you are one of the only dunces that has not filled out which dates you are available for the DUNCE V, y tho? Please go to https://goo.gl/forms/0g9dXzLQosscUQFU2 and check which dates you can attend. Most votes wins, Check duncebrother.com for info. Sent with Love, Tiny Tony"}, person[2]).send_message
 end
 
 
   Services::Notifications::Sms.new({body: "Dunce Brother Alert: test, The date has been changed for Dunce V. July 14th-16th. Check duncebrother.com/v for other updates and email tinytony@duncebrother.com if you plan to not attend"}, "+18159314369").send_message
+
+
+  #to do
+  create rules route
+  update coupon clause
