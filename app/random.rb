@@ -4,16 +4,13 @@ require 'services/notifications/sms'
 
 
 emails = [["tnaughts@gmail.com", "Tim", "+18159314369"],
-["anthony.m.lotesto@gmail.com", "Anthony", "+18159222518"],
 ["mattwilliambee@gmail.com", "Matt", "+18154095642"],
 ["jjnagle@gmail.com", "John", "+16189678309"],
 ["terence.naughton@gmail.com", "Terry", "+13127719901"],
 ["hardig1@yahoo.com", "Digz", "+16307231019"],
 ["dklang22@gmail.com", "Daniel", "+17089459188"],
-["rhaaksma15@gmail.com", "Shmo", "+18152121858"],
 ["charlesmack07@gmail.com", "Charlie", "+13092362193"],
 ["corey.tallent9@gmail.com", "Corey", "+16306054016"],
-["dllibert1822@gmail.com", "Dave", "+16302179143"],
 ["eric.mclean82@gmail.com", "Eric", "+18152603729"],
 ["niemiec005@gmail.com", "Nick", "+16303012319"],
 ["bee25141@gmail.com", "Tony", "+18156004269"],
@@ -35,7 +32,7 @@ emails = [["tnaughts@gmail.com", "Tim", "+18159314369"],
 
 
 emails.each do |person|
-  Services::Notifications::Sms.new({body: "Dunce Brother Special Notice: #{person[1]}, The V will be September 8th-10th  Housing has been confirmed and a schoolbus is rented for transport at the tournament. Email tinytony@duncebrother.com if you wish to cancel. Further details will be made available by July 5th at www.duncebrother.com - Stay True, Pierre Le'Dunce"}, person[2]).send_message
+  Services::Notifications::Sms.new({body: "Late Night Dunce Alert: #{person[1]}, We are all set for September 8th-10th for the Dunce Brother Pro-Am Invitational - Stay True, Pierre Le'Dunce"}, person[2]).send_message
 end
 
 emails.each do |person|
