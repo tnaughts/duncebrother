@@ -27,14 +27,23 @@ emails = [["tnaughts@gmail.com", "Tim", "+18159314369"],
 ["email", "Jacob", "+18476566947"],
 ["email", "Pat", "+16302097607"],
 ["email", "Jasso", "+16305429096"],
-["email", "Kris", "+16308628129"]]
+["email", "Kris", "+16308628129"],
+["email", "Danny", "+16308630041"],
+["dickson.148@gmail.com", "Ian", "+16308652285"],
+["email", "Andrew", "+18478949008"],
+["email", "Kevin", "+17083414034"]]
+
 
 emails.each do |person|
-  Services::Notifications::Sms.new({body: "Dunce Brother Special Notice: #{person[1]}, The V will be September 8th-10th and JB will get pink eye and a divorce. Housing has been confirmed and a schoolbus is rented for transport at the tournament. Email tinytony@duncebrother.com if you wish to cancel. Further details will be made available by July 5th at www.duncebrother.com - Stay True, Pierre Le'Dunce"}, person[2]).send_message
+  Services::Notifications::Sms.new({body: "Dunce Brother Special Notice: #{person[1]}, The V will be September 8th-10th  Housing has been confirmed and a schoolbus is rented for transport at the tournament. Email tinytony@duncebrother.com if you wish to cancel. Further details will be made available by July 5th at www.duncebrother.com - Stay True, Pierre Le'Dunce"}, person[2]).send_message
 end
 
-emails3.each do |person|
-  Services::Notifications::Sms.new({body: "Dunce Brother Alert: #{person[1]}, The Dunce Brother Pro-Am V will be either September 9th or 16th. Please go to https://goo.gl/forms/0g9dXzLQosscUQFU2 and check which dates you can attend. Most votes wins, Tiny Tony says no more fucking around. Check duncebrother.com for info. Sent with Love, Tiny Tony"}, person[2]).send_message
+emails.each do |person|
+  Services::Notifications::Sms.new({body: "Dunce Brother Alert: #{person[1]}, The Dunce Brother Pro-Am V will be September 8th-10th in Michigan City and JB will get pink eye and a divorce. Housing has been confirmed and a schoolbus is rented for transport while in MI City. www.duncebrother.com/v will be updated with full details by July 5th. Email tinytony@duncebrother.com if you wish to cancel. -Sweet Dreams, Pierre LeDunce"}, person[2]).send_message
+end
+
+emails.each do |person|
+  Services::Notifications::Sms.new({body: "Automated Dunce Brother Alert: #{person[1]}, You have been cordially invited to the Dunce Brother Pro-Am Invitational by way of Mike Hardig. Date: Sept 8-10th in Michigan City. More info and tournament history/legacy at www.duncebrother.com -Stay True, Pierre LeDunce"}, person[2]).send_message
 end
 
 emails4 = [["tnaughts@gmail.com", "Tim", "+18159314369"],
