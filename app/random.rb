@@ -32,7 +32,7 @@ emails = [["tnaughts@gmail.com", "Tim", "+18159314369"],
 
 
 emails.each do |person|
-  Services::Notifications::Sms.new({body: "Late Night Dunce Alert: #{person[1]}, We are all set for September 8th-10th for the Dunce Brother Pro-Am Invitational - Stay True, Pierre Le'Dunce"}, person[2]).send_message
+  Services::Notifications::Sms.new({body: "Late Night Dunce Alert: #{person[1]}, We are all set for September 8th-10th for the Dunce Brother Pro-Am Invitational. Limited Space Available for RV transport to tournament for addtl fee, accepting applications at tinytony@duncebrother.com Tournament details at duncebrother.com/v - May You Rest Easy Child, Pierre Le'Dunce"}, person[2]).send_message
 end
 
 emails.each do |person|
