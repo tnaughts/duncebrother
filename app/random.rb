@@ -9,7 +9,6 @@ emails = [["tnaughts@gmail.com", "Tim", "+18159314369"],
 ["terence.naughton@gmail.com", "Terry", "+13127719901"],
 ["hardig1@yahoo.com", "Digz", "+16307231019"],
 ["dklang22@gmail.com", "Daniel", "+17089459188"],
-["charlesmack07@gmail.com", "Charlie", "+13092362193"],
 ["corey.tallent9@gmail.com", "Corey", "+16306054016"],
 ["eric.mclean82@gmail.com", "Eric", "+18152603729"],
 ["niemiec005@gmail.com", "Nick", "+16303012319"],
@@ -24,15 +23,15 @@ emails = [["tnaughts@gmail.com", "Tim", "+18159314369"],
 ["email", "Jacob", "+18476566947"],
 ["email", "Pat", "+16302097607"],
 ["email", "Jasso", "+16305429096"],
-["email", "Kris", "+16308628129"],
-["email", "Danny", "+16308630041"],
 ["dickson.148@gmail.com", "Ian", "+16308652285"],
 ["email", "Andrew", "+18478949008"],
-["email", "Kevin", "+17083414034"]]
+["email", "Kevin", "+17083414034"],
+["email", "Sean", "+12178532335"],
+["email", "Stevasaurus", "+17089453188"]]
 
 
 emails.each do |person|
-  Services::Notifications::Sms.new({body: "Late Night Dunce Alert: #{person[1]}, We are all set for September 8th-10th for the Dunce Brother Pro-Am Invitational. Limited Space Available for RV transport to tournament for addtl fee, accepting applications at tinytony@duncebrother.com Tournament details at duncebrother.com/v - May You Rest Easy Child, Pierre Le'Dunce"}, person[2]).send_message
+  Services::Notifications::Sms.new({body: " #{person[1]}, we're steps away from the most prestigious tradition in sports. RV is now $25 for round trip transport, no dumps can be taken though. Tony is accepting payment at Venmo Timnaughton or paypal tnaughts@gmail.com ($175 for Golf, Booze, Beachfront home if paid before Tony's 9/1 statement, $200 if you want all that and the RV from chi to MI city, everyone has access to RV once in MI City) https://goo.gl/5HSCAxs bien a vous, - Pierre Le'Dunce"}, person[2]).send_message
 end
 
 emails.each do |person|
