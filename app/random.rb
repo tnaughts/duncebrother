@@ -6,6 +6,7 @@ require 'services/notifications/sms'
 emails = [["tnaughts@gmail.com", "Tim", "+18159314369"],
 ["mattwilliambee@gmail.com", "Matt", "+18154095642"],
 ["jjnagle@gmail.com", "John", "+16189678309"],
+["anthony.m.lotesto@gmail.com", "Anthony", "+18159222518"],
 ["terence.naughton@gmail.com", "Terry", "+13127719901"],
 ["hardig1@yahoo.com", "Digz", "+16307231019"],
 ["dklang22@gmail.com", "Daniel", "+17089459188"],
@@ -14,24 +15,33 @@ emails = [["tnaughts@gmail.com", "Tim", "+18159314369"],
 ["niemiec005@gmail.com", "Nick", "+16303012319"],
 ["bee25141@gmail.com", "Tony", "+18156004269"],
 ["grant@email", "Grant", "+16307401150"],
-["email", "Ron", "+18155450760"],
-["email", "Mozack", "+12242178182"],
 ["email", "Brian", "+18153511114"],
 ["email", "Steve", "+18152589393"],
 ["email", "Steve", "+17735477227"],
 ["email", "Joe", "+16308855734"],
-["email", "Jacob", "+18476566947"],
 ["email", "Pat", "+16302097607"],
 ["email", "Jasso", "+16305429096"],
 ["dickson.148@gmail.com", "Ian", "+16308652285"],
 ["email", "Andrew", "+18478949008"],
 ["email", "Kevin", "+17083414034"],
-["email", "Sean", "+12178532335"],
-["email", "Stevasaurus", "+17089453188"]]
+["email", "Chuck", "+17088292135"],
+["email", "Kris", "+16308628129"],
+["email", "Mozack", "+12242178182"],
+["email", "Charlie","+13092362193"],
+["emails", "Steve", "+17089453188"],
+["email", "Larry", "+18477677656"]]
+
+emails2 = [
+  ["dklang22@gmail.com", "Daniel", "+17089459188"],
+  ["email", "Charlie","+13092362193"],
+  ["email", "Mozack", "+12242178182"],
+  ["email", "Kris", "+16308628129"],
+  ["email", "Chuck", "+17088292135"]  
+]
 
 
 emails.each do |person|
-  Services::Notifications::Sms.new({body: " #{person[1]}, we're steps away from the most prestigious tradition in sports. RV is now $25 for round trip transport, no dumps can be taken though. Tony is accepting payment at Venmo Timnaughton or paypal tnaughts@gmail.com ($175 for Golf, Booze, Beachfront home if paid before Tony's 9/1 statement, $200 if you want all that and the RV from chi to MI city, everyone has access to RV once in MI City) https://goo.gl/5HSCAxs bien a vous, - Pierre Le'Dunce"}, person[2]).send_message
+  Services::Notifications::Sms.new({body: "Dunce Brother Alert for #{person[1]}: Dunce the 6th: Welcome Home is scheduled to take place in Chicago in Sept please fill out the survey for your availability https://goo.gl/forms/Ji4wx93Y7wZit6k23 you thought this was over?"}, person[2]).send_message
 end
 
 emails.each do |person|
