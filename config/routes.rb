@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'greetings/index'
 
-  get '/v', to: 'greetings#v'
+  get '/VI', to: 'greetings#v'
 
   root 'greetings#index'
 

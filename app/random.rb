@@ -29,7 +29,10 @@ emails = [["tnaughts@gmail.com", "Tim", "+18159314369"],
 ["email", "Mozack", "+12242178182"],
 ["email", "Charlie","+13092362193"],
 ["emails", "Steve", "+17089453188"],
-["email", "Larry", "+18477677656"]]
+["email", "Larry", "+18477677656"],
+["emai", "Logan", "+18479242139"],
+["davidShcarts", "David", "+18159992293"],
+["shanks", "Jacob", "+18476566947"]]
 
 emails2 = [
   ["dklang22@gmail.com", "Daniel", "+17089459188"],
