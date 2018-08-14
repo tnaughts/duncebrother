@@ -32,7 +32,9 @@ emails = [["tnaughts@gmail.com", "Tim", "+18159314369"],
 ["email", "Larry", "+18477677656"],
 ["emai", "Logan", "+18479242139"],
 ["davidShcarts", "David", "+18159992293"],
-["shanks", "Jacob", "+18476566947"]]
+["shanks", "Jacob", "+18476566947"],
+["rhaaksma15@gmail.com", "Shmo", "+18152121858"],
+["Scot", "Scott", "+18153701663"]]
 
 emails2 = [
   ["dklang22@gmail.com", "Daniel", "+17089459188"],
@@ -44,7 +46,7 @@ emails2 = [
 
 
 emails.each do |person|
-  Services::Notifications::Sms.new({body: "Dunce Brother Alert for #{person[1]}: Dunce the 6th: Welcome Home is scheduled to take place in Chicago in Sept please fill out the survey for your availability https://goo.gl/forms/Ji4wx93Y7wZit6k23 you thought this was over?"}, person[2]).send_message
+  Services::Notifications::Sms.new({body: "Dunce Brother Official Alert: Dunce the 6th is scheduled for 8:30AM Saturday Sept 29th at Joe Louis 'The Champ'. Additional Details to come. https://goo.gl/uSSBJ8 With Love, Pierre Le'Dunce, PS Good luck any first duncers"}, person[2]).send_message
 end
 
 emails.each do |person|
