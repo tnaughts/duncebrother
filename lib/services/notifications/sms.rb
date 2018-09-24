@@ -12,7 +12,7 @@ module Services
 
       def send_message
 
-        twilio_client.account.messages.create(
+        twilio_client.messages.create(
           from: ENV['TWILIO_NUMBER'],
           to: phone,
           body: payload[:body]
